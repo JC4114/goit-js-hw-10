@@ -42,13 +42,14 @@ function renderCountryData(countryData) {
   }
   if (countryData.length > 1) {
     globalList = countryData;
+
     ref.countryList.innerHTML = createList(countryData);
   } else {
     ref.countryInfo.innerHTML = createInfo(countryData[0]);
   }
 }
 function searchError(error) {
-  Notify.failure('Oops, there is no country with that name');
+  Notify.failure('Oops, there is no country with that  name');
 }
 
 function reset() {
